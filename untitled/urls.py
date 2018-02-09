@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from untitled.views import current_datetime
 from untitled.views import hours_ahead
+from untitled.views import book_list
 from django.conf.urls import include, url
 
 urlpatterns = [
     url('time/', current_datetime),
     url('lll/', hours_ahead),
+    url('book/', book_list),
 ]
