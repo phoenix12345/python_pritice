@@ -21,7 +21,7 @@ def hours_ahead(request):
 
 
 def book_list(request):
-    db = pymysql.connect( port=3306,user='root',password='root',db='ecargo',charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
+    db = pymysql.connect( port=3306,user='root',password='root',db='test',charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor)
     cusor = db.cursor()
     cusor.execute("select * from org")
     for row in cusor.fetchall():
