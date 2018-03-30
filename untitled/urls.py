@@ -24,4 +24,5 @@ urlpatterns = [
     url('time/', current_datetime),
     url('lll/', hours_ahead),
     url('book/', book_list),
+    url(r'^admin/', admin.site.urls),
 ]
