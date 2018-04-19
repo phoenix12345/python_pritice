@@ -19,10 +19,14 @@ from untitled.views import current_datetime
 from untitled.views import hours_ahead
 from untitled.views import book_list
 from django.conf.urls import include, url
+from books.views import search
+from books.views import contact
 
 urlpatterns = [
     url('time/', current_datetime),
     url('lll/', hours_ahead),
     url('book/', book_list),
     url(r'^admin/', admin.site.urls),
+    url('search/',search),
+    url('contact/',contact)
 ]

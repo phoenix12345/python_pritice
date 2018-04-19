@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+        <h1>Contact us</h1>
+        <form action="." method="post">{% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+</body>
+</html>

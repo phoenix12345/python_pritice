@@ -27,3 +27,4 @@ def book_list(request):
     for row in cusor.fetchall():
         id = row
     return render_to_response('book_list.html',{'id':id})
+
